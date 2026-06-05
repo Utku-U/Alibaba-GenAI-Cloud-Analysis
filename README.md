@@ -6,7 +6,7 @@ Collected Data → Data_Informations → 1EDA → ...
 ### 📂 Veri Kaynağı & Teşekkür
 Bu analizde kullanılan temel veri seti Alibaba GenAI Küme İzleme (v2026)'dır. Bu mimari analizi mümkün kılan, gerçek dünya üretken yapay zeka iş yükü izlerini açık kaynak olarak paylaşan bu veri setinin orijinal yaratıcılarına ve katkıda bulunanlarına teşekkür etmek istiyorum.
 
------------------------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------------------
 
 Run flow:
 Collected Data → Data_Informations → 1EDA → ...

@@ -1,5 +1,6 @@
 # Alibaba-GenAI-Cloud-Analysis
 
+Run flow:
 Collected Data → Data_Informations → ...
 
 ### 📂 Data Source & Acknowledgments

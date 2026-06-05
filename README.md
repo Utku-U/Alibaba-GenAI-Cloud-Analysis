@@ -30,7 +30,8 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 - `Döngü (Repeated Iteration & Sampler):` Görseldeki geri dönüş oku kritiktir. Sampler, her adımda gürültüyü biraz daha temizler. Bu döngü 20-50 kez tekrarlanır.
 - `Çıkış (Image):` Gürültü tamamen temizlendiğinde, VAE (Decoder) latent veriyi tekrar piksellere dönüştürerek final resmini oluşturur.
 
-![MLoRA-Pipeline.png](attachment:MLoRA-Pipeline.png)
+<img width="401" height="111" alt="MLoRA-Pipeline" src="https://github.com/user-attachments/assets/2bad09ca-4f2f-4d4e-a522-316fabdd89f7" />
+
 
 
 #### **<span style="color:lightblue">Kullanıcı İstek çeşitleri:</span>**

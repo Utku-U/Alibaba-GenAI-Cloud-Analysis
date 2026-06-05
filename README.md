@@ -68,9 +68,10 @@ Ayrıca, cloud sistem içerisindeki podları kontrol eden prometheus adaptörü 
 <img width="2048" height="1546" alt="WhatsApp Image 2026-06-05 at 18 00 33" src="https://github.com/user-attachments/assets/af4110e8-3963-4185-8da9-deb527c3b4d8" />
 
 
-
-
 ### Veri setine uygun olacak şekilde sistemin daha iyi anlaşılabilmesi adına yapılan çizim:
+
+<img width="2048" height="1460" alt="WhatsApp Image 2026-06-05 at 18 00 32" src="https://github.com/user-attachments/assets/54eefbc4-b1d7-4851-842a-c5537fcfdac5" />
+
 
 
 

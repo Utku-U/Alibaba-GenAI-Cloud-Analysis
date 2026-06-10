@@ -13,11 +13,11 @@ All downloaded .tar dataset files are extracted, loaded as .csv formats, and man
 The real_time_CST feature has been synchronized to follow the China Standard Time (CST) zone to match the cluster's native operational lifecycle. Comprehensive data definitions can be found directly in the accompanying Data_Information log.
 
 📊 Exploratory Data Analysis (EDA)
-1_EDA.ipynb | Request Type Profiling: Visualization and behavior modeling of various incoming client request types.
+- 1_EDA.ipynb | Request Type Profiling: Visualization and behavior modeling of various incoming client request types.
+- 2_EDA.ipynb | Queue & Latency Dynamics: Deep dive into container queue sizes and waiting latency distributions.
+- 3_EDA.ipynb | Resource Co-dependence (RAM vs. VRAM): Scatter plot analysis mapping baseline memory and VRAM footprints across common pod footprints to detect cold vs. warm start signatures.
 
-2_EDA.ipynb | Queue & Latency Dynamics: Deep dive into container queue sizes and waiting latency distributions.
 
-3_EDA.ipynb | Resource Co-dependence (RAM vs. VRAM): Scatter plot analysis mapping baseline memory and VRAM footprints across common pod footprints to detect cold vs. warm start signatures.
 
 - Data_Information dosyasında ise okunan .csv formatındaki verilerin açıklamaları bulunuyor. 
 - 1_EDA: İstek tiplerinin görselleştirilmesi ve yorumlanması. 

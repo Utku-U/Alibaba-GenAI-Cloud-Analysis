@@ -2,16 +2,26 @@
 
 Yapılan Analizi çalıştırmak isterseniz:
 
-Collected Data → Data_Informations → 1EDA → ...
 
+Collected Data → Data_Informations → 1_EDA → 2_EDA → 3_EDA → Analysis
 
 --------------------
 !!Not:Öncelikle belirtmek isterim ki bu veri setini anlamaya yönelik açıklamalrım ve analizlerimde kişisel görüşlerime ve anlamlarıma yer verilmektedir. Rasgele modeller ve rasgele çıkarımlar elde etmekten daha ziyade veri setinin(GenTD) elde edildiği Cloud Natine sistemini ve arka planda yürütülen sürecin anlamlandırılması ile birlikte sistemden elde edilecek farklı çıkarımlar ve çözümlerine değinilmesi amaçlanmıştır.
 
 
 1. Data Collected ile local bilgisayarınıza indirmiş olduğunuz .tar uzantılı dosyaların .csv formatında, dataframes adında bir sözlükte bütün veriler barındırlmıştır. eklenen Real_time_CST değişkeni ise Çin saat dilimine uygun şekilde değiştirilmiştir. notebbok/Data_Information dosyasında ise okunan .csv formatındaki verilerin anlamları, açıklamaları bulunuyor.
-2. 1_EDA, 2_EDA, 3_EDA veri hakkında genel bilgiler ve çıkarımlar yapabilmek adına uyguladığım görselleştirmeler ve yorumlamalar bulunuyor. 
-3. Analysis dosyasında ise belirlemiş olduğum Darboğaz problemine odaklanılmıştır. PAM kümeleme algoritması kullanılarak Darboğaz bulunan podların tespiti ve gruplanması amaçlanmıştır. Bu sayede belirli zaman dilimlerine göre yüksek performans, düşük performans ile çalışan podlar ve yoğunluklarına göre, ilerleyen aşamalarda GenAI üretimi için yeni gönderilecek isteğin hangi podlara yönlendirilebileceği konusunda bir çalışma yapılabilmesine katkı sağlayabilmek amaçlanmıştır.
+- 1_EDA: İstek tiplerinin görselleştirilmesi ve yorumlanması. 
+- 2_EDA: Kuyruk boyutu ve bekleme sürelerinin görselleştirilmesi, yorumlanması.
+- 3_EDA: Veri setlerindeki ortak pod türlerinde çalıştırılan modellerin RAM,VRAM kullanım miktarlarının Saçılım grafiği ile görselleştirilmesi.
+
+
+- Analysis: Darboğaz problemine odaklanışlmıştır. PAM kümeleme algoritması kullanılarak Darboğaz bulunan podların tespit edilip gruplandırılmıştır. Bu sayede belirli zaman dilimlerine göre yüksek performans veya düşük performans ile çalışan podlar, yoğunluklarına göre çözümlerin belirlenmesine katkı sağlaması amaçlanmıştır.
+
+- 🔴 **Cluster 0 Bottleneck (Pods Crushed Under Heavy Load):** This cluster may represent pods experiencing an overload that pushes the limits of the system. Due to heavy processing volumes, it likely contains the time intervals and `container_ip`s where queue waiting times and latencies are at their peak.
+- 🔵 **Cluster 1 Idle Capacity (Pods Waiting in Idle):** This cluster might represent pods that are not receiving a sufficient workload despite having their resources reserved. They may exhibit low processing volumes and low GPU usage.
+- 🟢 **Cluster 2 Ideal Performance (Healthy Worker Pods):** This cluster reflects the targeted optimum operating state within the cloud infrastructure. They are likely receiving balanced workloads appropriate for their capacities, allowing them to utilize GPU resources efficiently.
+
+
 ---------------------
 
 

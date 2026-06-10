@@ -29,6 +29,8 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 
 <img width="401" height="111" alt="MLoRA-Pipeline" src="https://github.com/user-attachments/assets/2bad09ca-4f2f-4d4e-a522-316fabdd89f7" />
 
+---------------------
+
 
 ### 🔔 Attention:
 > *Please note that the explanations and analyses provided in this repository incorporate personal insights, system-level interpretations, and domain knowledge. Rather than generating random models or superficial metrics, this project deeply investigates the **Cloud-Native system architecture** behind the GenTD dataset. The ultimate goal is to map background infrastructure processes to concrete, production-ready engineering solutions.*

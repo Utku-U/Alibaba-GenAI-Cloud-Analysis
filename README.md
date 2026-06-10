@@ -62,7 +62,7 @@ Ayrıca, cloud sistem içerisindeki podları kontrol eden prometheus adaptörü 
 - **`Dinamik Tetikleyiciler(Traffivc):`** Kubernetes içerisindeki gözcü mekanizmaların ölçtükleri değerlere göre, örneğin podların %80 terlemesi, kuyruk uzunlujları vb. göre kuberneteslerin tetiklenmesi. İhtiyaç yokken podlar kapatılarak enerji tasarrufu gibi tetikleyiciler mevcuttur. örn: HPA,KEDA
 
 
-### Veri setine uygun olacak şekilde sistemin daha iyi anlaşılabilmesi adına yapılan çizim:
+### Veri setine uygun olacak şekilde cloud sistemin daha iyi anlaşılabilmesi adına yapılan çizim:
 <img width="2048" height="1460" alt="WhatsApp Image 2026-06-05 at 18 00 32" src="https://github.com/user-attachments/assets/54eefbc4-b1d7-4851-842a-c5537fcfdac5" />
 
 

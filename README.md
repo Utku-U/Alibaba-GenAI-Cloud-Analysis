@@ -23,21 +23,11 @@ The Data_Information file contains descriptions of the data read from the .csv f
 The focus is on the bottleneck problem. Using the PAM clustering algorithm, pods containing bottlenecks are identified and grouped. This aims to help determine solutions based on the density of pods operating with high or low performance during specific time periods.
 
 
+| :--- | :---: | 
+| 🔴 Cluster 0 Bottleneck (Pods Crushed Under Heavy Load): | This cluster may represent pods experiencing an overload that pushes the limits of the system. Due to heavy processing volumes, it likely contains the time intervals and `container_ip`s where queue waiting times and latencies are at their peak. | 
+| 🔵 Cluster 1 Idle Capacity (Pods Waiting in Idle): | This cluster might represent pods that are not receiving a sufficient workload despite having their resources reserved. They may exhibit low processing volumes and low GPU usage. | 
+| 🟢 Cluster 2 Ideal Performance (Healthy Worker Pods): | This cluster reflects the targeted optimum operating state within the cloud infrastructure. They are likely receiving balanced workloads appropriate for their capacities, allowing them to utilize GPU resources efficiently. |
 
-- Data_Information dosyasında ise okunan .csv formatındaki verilerin açıklamaları bulunuyor. 
-- 1_EDA: İstek tiplerinin görselleştirilmesi ve yorumlanması. 
-- 2_EDA: Kuyruk boyutu ve bekleme sürelerinin görselleştirilmesi, yorumlanması.
-- 3_EDA: Veri setlerindeki ortak pod türlerinde çalıştırılan modellerin RAM,VRAM kullanım miktarlarının Saçılım grafiği ile görselleştirilmesi.
-
-
-Profile,Cluster Identity,System Status,Infrastructure Impact
-🔴,Cluster 0: Bottleneck,Overloaded,"Pods crushed under heavy workload. Peak queue times, high tail-latencies, and system limits pushed to the brink."
-🔵,Cluster 1: Idle Capacity,Inefficient,"Pods waiting in idle (rölanti). Resources are fully reserved/billed, but the load balancer is starving them of work."
-🟢,Cluster 2: Ideal Performance,Optimized,"Healthy worker pods. Balanced workloads perfectly matched to capacity, yielding maximum GPU/VRAM efficiency."
-
-
-
-- Analysis: Darboğaz problemine odaklanışlmıştır. PAM kümeleme algoritması kullanılarak Darboğaz bulunan podların tespit edilip gruplandırılmıştır. Bu sayede belirli zaman dilimlerine göre yüksek performans veya düşük performans ile çalışan podlar, yoğunluklarına göre çözümlerin belirlenmesine katkı sağlaması amaçlanmıştır.
 
 - 🔴 **Cluster 0 Bottleneck (Pods Crushed Under Heavy Load):** This cluster may represent pods experiencing an overload that pushes the limits of the system. Due to heavy processing volumes, it likely contains the time intervals and `container_ip`s where queue waiting times and latencies are at their peak.
 - 🔵 **Cluster 1 Idle Capacity (Pods Waiting in Idle):** This cluster might represent pods that are not receiving a sufficient workload despite having their resources reserved. They may exhibit low processing volumes and low GPU usage.

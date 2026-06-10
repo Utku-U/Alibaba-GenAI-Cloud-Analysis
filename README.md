@@ -23,11 +23,14 @@ The Data_Information file contains descriptions of the data read from the .csv f
 The focus is on the bottleneck problem. Using the PAM clustering algorithm, pods containing bottlenecks are identified and grouped. This aims to help determine solutions based on the density of pods operating with high or low performance during specific time periods.
 
 
+| LGBM | Valid setindei Metrikler
 | :--- | :---: | 
 | 🔴 Cluster 0 Bottleneck (Pods Crushed Under Heavy Load): | This cluster may represent pods experiencing an overload that pushes the limits of the system. Due to heavy processing volumes, it likely contains the time intervals and `container_ip`s where queue waiting times and latencies are at their peak. | 
 | 🔵 Cluster 1 Idle Capacity (Pods Waiting in Idle): | This cluster might represent pods that are not receiving a sufficient workload despite having their resources reserved. They may exhibit low processing volumes and low GPU usage. | 
 | 🟢 Cluster 2 Ideal Performance (Healthy Worker Pods): | This cluster reflects the targeted optimum operating state within the cloud infrastructure. They are likely receiving balanced workloads appropriate for their capacities, allowing them to utilize GPU resources efficiently. |
 
+
+---------------------
 
 - 🔴 **Cluster 0 Bottleneck (Pods Crushed Under Heavy Load):** This cluster may represent pods experiencing an overload that pushes the limits of the system. Due to heavy processing volumes, it likely contains the time intervals and `container_ip`s where queue waiting times and latencies are at their peak.
 - 🔵 **Cluster 1 Idle Capacity (Pods Waiting in Idle):** This cluster might represent pods that are not receiving a sufficient workload despite having their resources reserved. They may exhibit low processing volumes and low GPU usage.

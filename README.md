@@ -6,10 +6,11 @@ Collected Data → Data_Informations → 1EDA → ...
 
 
 --------------------
-!!Not:Öncelikle belirtmek isterim ki bu veri setini anlamaya yönelik açıklamalrım ve analizlerimde kişisel görüşlerime ve anlamlarıma yer verilmektedir. 
+!!Not:Öncelikle belirtmek isterim ki bu veri setini anlamaya yönelik açıklamalrım ve analizlerimde kişisel görüşlerime ve anlamlarıma yer verilmektedir. Rasgele modeller ve rasgele çıkarımlar elde etmekten daha ziyade veri setinin(GenTD) elde edildiği Cloud Natine sistemini ve arka planda yürütülen sürecin anlamlandırılması ile birlikte sistemden elde edilecek farklı çıkarımlar ve çözümlerine değinilmesi amaçlanmıştır.
+
 
 1. Data Collected ile local bilgisayarınıza indirmiş olduğunuz .tar uzantılı dosyaların .csv formatında, dataframes adında bir sözlükte bütün veriler barındırlmıştır. eklenen Real_time_CST değişkeni ise Çin saat dilimine uygun şekilde değiştirilmiştir. notebbok/Data_Information dosyasında ise okunan .csv formatındaki verilerin anlamları, açıklamaları bulunuyor.
-2. 3_EDA'ya kadar veri hakkında genel bilgiler ve çıkarımlar yapabilmek adına uyguladığım görselleştirmeler ve yorumlamalar bulunuyor.
+2. 1_EDA, 2_EDA, 3_EDA veri hakkında genel bilgiler ve çıkarımlar yapabilmek adına uyguladığım görselleştirmeler ve yorumlamalar bulunuyor.
 3. Analysis dosyasında ise belirlemiş olduğum Darboğaz problemine odaklanılmıştır. PAM kümeleme algoritması kullanılarak Darboğaz bulunan podların tespiti ve gruplanması amaçlanmıştır. Bu sayede belirli zaman dilimlerine göre yüksek performans, düşük performans ile çalışan podlar ve yoğunluklarına göre, ilerleyen aşamalarda GenAI üretimi için yeni gönderilecek isteğin hangi podlara yönlendirilebileceği konusunda bir çalışma yapılabilmesine katkı sağlayabilmek amaçlanmıştır.
 ---------------------
 

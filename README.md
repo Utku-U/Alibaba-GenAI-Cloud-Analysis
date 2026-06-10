@@ -12,10 +12,15 @@ Please note that the explanations and analyses provided in this repository incor
 All downloaded .tar dataset files are extracted, loaded as .csv formats, and managed globally inside a Python dictionary named dataframes.
 The real_time_CST feature has been synchronized to follow the China Standard Time (CST) zone to match the cluster's native operational lifecycle. Comprehensive data definitions can be found directly in the accompanying Data_Information log.
 
+The Data_Information file contains descriptions of the data read from the .csv file.
+
 📊 Exploratory Data Analysis (EDA)
-- 1_EDA.ipynb | Request Type Profiling: Visualization and behavior modeling of various incoming client request types.
-- 2_EDA.ipynb | Queue & Latency Dynamics: Deep dive into container queue sizes and waiting latency distributions.
-- 3_EDA.ipynb | Resource Co-dependence (RAM vs. VRAM): Scatter plot analysis mapping baseline memory and VRAM footprints across common pod footprints to detect cold vs. warm start signatures.
+- 1_EDA.ipynb : Request Type Profiling: Visualization and behavior modeling of various incoming client request types.
+- 2_EDA.ipynb : Queue & Latency Dynamics: Deep dive into container queue sizes and waiting latency distributions.
+- 3_EDA.ipynb : Resource Co-dependence (RAM vs. VRAM): Scatter plot analysis mapping baseline memory and VRAM footprints across common pod footprints to detect cold vs. warm start signatures.
+
+🔬 Feature Engineering & Analysis
+The focus is on the bottleneck problem. Using the PAM clustering algorithm, pods containing bottlenecks are identified and grouped. This aims to help determine solutions based on the density of pods operating with high or low performance during specific time periods.
 
 
 
@@ -23,6 +28,13 @@ The real_time_CST feature has been synchronized to follow the China Standard Tim
 - 1_EDA: İstek tiplerinin görselleştirilmesi ve yorumlanması. 
 - 2_EDA: Kuyruk boyutu ve bekleme sürelerinin görselleştirilmesi, yorumlanması.
 - 3_EDA: Veri setlerindeki ortak pod türlerinde çalıştırılan modellerin RAM,VRAM kullanım miktarlarının Saçılım grafiği ile görselleştirilmesi.
+
+
+Profile,Cluster Identity,System Status,Infrastructure Impact
+🔴,Cluster 0: Bottleneck,Overloaded,"Pods crushed under heavy workload. Peak queue times, high tail-latencies, and system limits pushed to the brink."
+🔵,Cluster 1: Idle Capacity,Inefficient,"Pods waiting in idle (rölanti). Resources are fully reserved/billed, but the load balancer is starving them of work."
+🟢,Cluster 2: Ideal Performance,Optimized,"Healthy worker pods. Balanced workloads perfectly matched to capacity, yielding maximum GPU/VRAM efficiency."
+
 
 
 - Analysis: Darboğaz problemine odaklanışlmıştır. PAM kümeleme algoritması kullanılarak Darboğaz bulunan podların tespit edilip gruplandırılmıştır. Bu sayede belirli zaman dilimlerine göre yüksek performans veya düşük performans ile çalışan podlar, yoğunluklarına göre çözümlerin belirlenmesine katkı sağlaması amaçlanmıştır.

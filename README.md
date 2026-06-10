@@ -25,6 +25,22 @@ The focus is on the bottleneck problem. Using the PAM clustering algorithm, pods
 | 🟢 Cluster 2 Ideal Performance (Healthy Worker Pods): | This cluster reflects the targeted optimum operating state within the cloud infrastructure. They are likely receiving balanced workloads appropriate for their capacities, allowing them to utilize GPU resources efficiently. |
 
 
+## 🧭 Execution Order & Project Pipeline
+
+If you want to reproduce the analysis or run the repository step-by-step, please follow this logical order:
+
+```mermaid
+graph LR
+    A[📦 Collected Data] --> B[📄 Data Information]
+    B --> C[📊 1_EDA]
+    C --> D[📉 2_EDA]
+    D --> E[🔬 3_EDA]
+    E --> F[🧠 Advanced Analysis]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style F fill:#bbf,stroke:#333,stroke-width:2px
+```
+
 ---------------------
 
 Yapılan Analizi çalıştırmak isterseniz:

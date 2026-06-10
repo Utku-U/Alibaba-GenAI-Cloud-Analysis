@@ -1,5 +1,6 @@
 # Alibaba-GenAI-Cloud-Analysis
 
+---------------------
 🔔 Attention:
 Please note that the explanations and analyses provided in this repository incorporate personal insights, system-level interpretations, and domain knowledge. Rather than generating random models or superficial metrics, this project deeply investigates the Cloud-Native system architecture behind the GenTD dataset. The ultimate goal is to map background infrastructure processes to concrete, production-ready engineering solutions.
 
@@ -40,8 +41,10 @@ graph LR
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style F fill:#bbf,stroke:#333,stroke-width:2px
 ```
-
 ---------------------
+
+
+
 
 
 ### Veri Setine Dair detaylı bilgi:

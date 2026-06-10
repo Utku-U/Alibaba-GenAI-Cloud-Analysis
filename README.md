@@ -43,13 +43,6 @@ graph LR
 
 ---------------------
 
-Yapılan Analizi çalıştırmak isterseniz:
-
-
-Collected Data → Data_Informations → 1_EDA → 2_EDA → 3_EDA → Analysis
-
----------------------
-
 
 ### Veri Setine Dair detaylı bilgi:
 #### **GENTD26:** 

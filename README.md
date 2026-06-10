@@ -18,7 +18,6 @@ Alibaba cloud, içerisinde Database(vertabanları), Storage, Compute(Hesaplama, 
 
 
 ## **Stable Diffusion Architectural**
-
 Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanılan en popüler yöntemlerden biridir) Mimarinin temel amacı: Görselleri ve Promptları matematiksel bir gürültü giderme(denoise) süreci ile yüksek çözünürlüklü ve anlamlı görsel haline getirmek.
 
 - `Giriş(Noise & VAE):` Sistem tamamen rasgele bir gürültüyle başlar. VAE(Encoder) bu gürültüyü "Latent Space" (Gizli Uzay) denilen, hesaplaması daha kolay, sıkıştırılmış bir alana taşır.

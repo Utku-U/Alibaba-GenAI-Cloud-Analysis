@@ -27,6 +27,24 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 
 <img width="401" height="111" alt="MLoRA-Pipeline" src="https://github.com/user-attachments/assets/2bad09ca-4f2f-4d4e-a522-316fabdd89f7" />
 
+## **Dataset Structure**
+
+├cluster-trace-v2026-GenAI
+
+├── qps.csv # System QPS sampling data from gateway
+├── queue_size_raw_anon.csv # Queue size monitoring data from gateway
+├── queue_rt_raw_anon.csv # Queue response time monitoring data from gateway
+├── pipeline_update_latency_anon.csv # Pipeline update latency, including base model, LoRA, and ControlNet
+├── base_model_update_latency_anon.csv # Base model loading latency
+├── lora_update_latency_anon.csv # LoRA adapter loading latency
+├── controlnet_latency_data_anon.csv # ControlNet loading latency
+├── pod_memory_util_anon.csv # Container memory utilization
+├── pod_gpu_duty_cycle_anon.csv # GPU utilization of each kubernetes pod
+├── pod_gpu_memory_used_bytes_anon.csv # GPU memory usage of each kubernetes pod
+├── model_predict_data_anon.csv # Pure inference latency
+├── pipeline_inference_data_anon.csv # End-to-end inference response time
+└── lora_request_trace.csv # Application-level performance data from user side
+
 ---------------------
 
 

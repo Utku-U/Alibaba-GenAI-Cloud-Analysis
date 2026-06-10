@@ -112,11 +112,8 @@ Ayrıca, cloud sistem içerisindeki podları kontrol eden prometheus adaptörü 
 - **`Statik Tetikleyiciler(Admin):`** Resources istek türlerinin yoğunluklarına göre, örneğin kullanıcılar için 100 podun hazır tutulması için kuberneteslerin tetiklenmesi. Yalnızca kullanıcıların modelleri kullanım zamanlarından önce hazırda bekletilmesi ile ilgili bir zaman optimizasyondan söz edilebilir.
 - **`Dinamik Tetikleyiciler(Traffivc):`** Kubernetes içerisindeki gözcü mekanizmaların ölçtükleri değerlere göre, örneğin podların %80 terlemesi, kuyruk uzunlujları vb. göre kuberneteslerin tetiklenmesi. İhtiyaç yokken podlar kapatılarak enerji tasarrufu gibi tetikleyiciler mevcuttur. örn: HPA,KEDA
 
-<img width="2048" height="1546" alt="WhatsApp Image 2026-06-05 at 18 00 33" src="https://github.com/user-attachments/assets/af4110e8-3963-4185-8da9-deb527c3b4d8" />
-
 
 ### Veri setine uygun olacak şekilde sistemin daha iyi anlaşılabilmesi adına yapılan çizim:
-
 <img width="2048" height="1460" alt="WhatsApp Image 2026-06-05 at 18 00 32" src="https://github.com/user-attachments/assets/54eefbc4-b1d7-4851-842a-c5537fcfdac5" />
 
 

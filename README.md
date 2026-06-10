@@ -28,10 +28,7 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 <img width="401" height="111" alt="MLoRA-Pipeline" src="https://github.com/user-attachments/assets/2bad09ca-4f2f-4d4e-a522-316fabdd89f7" />
 
 
-├── qps.csv # System QPS sampling data from gateway
-├── queue_size_raw_anon.csv # Queue size monitoring data from gateway
-├── queue_rt_raw_anon.csv # Queue response time monitoring data from gateway
-├── pipeline_update_latency_anon.csv # Pipeline update latency, including base model, LoRA, and ControlNet
+
 ├── base_model_update_latency_anon.csv # Base model loading latency
 ├── lora_update_latency_anon.csv # LoRA adapter loading latency
 ├── controlnet_latency_data_anon.csv # ControlNet loading latency

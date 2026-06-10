@@ -1,4 +1,4 @@
-#### **GENTD26:** 
+## **GENTD26 Dataset:** 
 
 Alibaba cloud, içerisinde Database(vertabanları), Storage, Compute(Hesaplama, işlem güçleri), Networking ... barındıran cloud yapısıdır. GENTD26 verisi ise Alibaba cloud bünyesinde yalnızca AI modelleri üzerinde gerçekleştirilmek istenen GenAI odaklı işlemleri izlemek adına toplanmış veri setidir. Elimizde yüksek çözünürlükte görüntü oluşturmaya yarayan uçtan uca Stable Diffusion mimarisi var. Bu mimari, işlem esnasında Alibaba Cloud içerisindeki GPU kullanır. GENTD26, 3 katman ile, uçtan uca mimarinin(fabrikanın tüm verimini, arızalarını ve yakıt tüketimini) kaydedilmiş bir **KARA KUTU / GÖZETLEME sisteminin** veri setidir. Verileri toplayan bu sistem Stable Diffusion GenAI kullanımına odaklanır. Bu veri seti, büyük ölçekli bir üretken yapay zeka sunucu sisteminin GENTD26 kapsamlı bir yukarıdan aşağıya görünümünü sunarak, üç mimari katmandaki performans verilerini yakalar: 
 

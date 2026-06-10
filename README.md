@@ -5,14 +5,20 @@ Yapılan Analizi çalıştırmak isterseniz:
 
 Collected Data → Data_Informations → 1_EDA → 2_EDA → 3_EDA → Analysis
 
---------------------
-!!Not:Öncelikle belirtmek isterim ki bu veri setini anlamaya yönelik açıklamalrım ve analizlerimde kişisel görüşlerime ve anlamlarıma yer verilmektedir. Rasgele modeller ve rasgele çıkarımlar elde etmekten daha ziyade veri setinin(GenTD) elde edildiği Cloud Natine sistemini ve arka planda yürütülen sürecin anlamlandırılması ile birlikte sistemden elde edilecek farklı çıkarımlar ve çözümlerine değinilmesi amaçlanmıştır.
-
 🔔 Attention:
 Please note that the explanations and analyses provided in this repository incorporate personal insights, system-level interpretations, and domain knowledge. Rather than generating random models or superficial metrics, this project deeply investigates the Cloud-Native system architecture behind the GenTD dataset. The ultimate goal is to map background infrastructure processes to concrete, production-ready engineering solutions.
 
+📦 0. Data Collected & Preprocessing
+All downloaded .tar dataset files are extracted, loaded as .csv formats, and managed globally inside a Python dictionary named dataframes.
+The real_time_CST feature has been synchronized to follow the China Standard Time (CST) zone to match the cluster's native operational lifecycle. Comprehensive data definitions can be found directly in the accompanying Data_Information log.
 
-- Data Collected ile local bilgisayarınıza indirmiş olduğunuz .tar uzantılı dosyaların .csv formatında, dataframes adında bir sözlükte bütün veriler barındırlmıştır. Veri setlerine sonradan eklenen Real_time_CST değişkeni ise Çin zaman dilimine uygun şekilde değiştirilmiştir.
+📊 Exploratory Data Analysis (EDA)
+1_EDA.ipynb | Request Type Profiling: Visualization and behavior modeling of various incoming client request types.
+
+2_EDA.ipynb | Queue & Latency Dynamics: Deep dive into container queue sizes and waiting latency distributions.
+
+3_EDA.ipynb | Resource Co-dependence (RAM vs. VRAM): Scatter plot analysis mapping baseline memory and VRAM footprints across common pod footprints to detect cold vs. warm start signatures.
+
 - Data_Information dosyasında ise okunan .csv formatındaki verilerin açıklamaları bulunuyor. 
 - 1_EDA: İstek tiplerinin görselleştirilmesi ve yorumlanması. 
 - 2_EDA: Kuyruk boyutu ve bekleme sürelerinin görselleştirilmesi, yorumlanması.

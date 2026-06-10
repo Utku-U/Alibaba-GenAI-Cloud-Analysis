@@ -27,9 +27,6 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 
 <img width="401" height="111" alt="MLoRA-Pipeline" src="https://github.com/user-attachments/assets/2bad09ca-4f2f-4d4e-a522-316fabdd89f7" />
 
-## **Dataset Structure**
-
-├cluster-trace-v2026-GenAI
 
 ├── qps.csv # System QPS sampling data from gateway
 ├── queue_size_raw_anon.csv # Queue size monitoring data from gateway

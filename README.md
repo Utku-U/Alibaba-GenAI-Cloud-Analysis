@@ -4,7 +4,7 @@
 🔔 Attention:
 Please note that the explanations and analyses provided in this repository incorporate personal insights, system-level interpretations, and domain knowledge. Rather than generating random models or superficial metrics, this project deeply investigates the Cloud-Native system architecture behind the GenTD dataset. The ultimate goal is to map background infrastructure processes to concrete, production-ready engineering solutions.
 
-📦 0. Data Collected & Preprocessing
+📦 Data Collected & Preprocessing
 All downloaded .tar dataset files are extracted, loaded as .csv formats, and managed globally inside a Python dictionary named dataframes.
 The real_time_CST feature has been synchronized to follow the China Standard Time (CST) zone to match the cluster's native operational lifecycle. Comprehensive data definitions can be found directly in the accompanying Data_Information log.
 

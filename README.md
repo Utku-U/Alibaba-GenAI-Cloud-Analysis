@@ -1,5 +1,12 @@
 # Alibaba-GenAI-Cloud-Analysis
 
+Yapılan Analizi çalıştırmak isterseniz:
+
+Collected Data → Data_Informations → 1EDA → ...
+
+
+
+
 ### Veri Setine Dair detaylı bilgi:
 #### **GENTD26:** 
 
@@ -74,10 +81,6 @@ Ayrıca, cloud sistem içerisindeki podları kontrol eden prometheus adaptörü 
 
 
 
-
-
-Analizi çalıştırma akışı:
-Collected Data → Data_Informations → 1EDA → ...
 
 ### 📂 Veri Kaynağı & Teşekkür
 Bu analizde kullanılan temel veri seti Alibaba GenAI Küme İzleme (v2026)'dır. Bu mimari analizi mümkün kılan, gerçek dünya üretken yapay zeka iş yükü izlerini açık kaynak olarak paylaşan bu veri setinin orijinal yaratıcılarına ve katkıda bulunanlarına teşekkür etmek istiyorum.

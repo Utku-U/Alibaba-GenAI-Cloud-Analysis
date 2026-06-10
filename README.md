@@ -8,8 +8,12 @@ Collected Data → Data_Informations → 1_EDA → 2_EDA → 3_EDA → Analysis
 --------------------
 !!Not:Öncelikle belirtmek isterim ki bu veri setini anlamaya yönelik açıklamalrım ve analizlerimde kişisel görüşlerime ve anlamlarıma yer verilmektedir. Rasgele modeller ve rasgele çıkarımlar elde etmekten daha ziyade veri setinin(GenTD) elde edildiği Cloud Natine sistemini ve arka planda yürütülen sürecin anlamlandırılması ile birlikte sistemden elde edilecek farklı çıkarımlar ve çözümlerine değinilmesi amaçlanmıştır.
 
+🔔 Attention:
+Please note that the explanations and analyses provided in this repository incorporate personal insights, system-level interpretations, and domain knowledge. Rather than generating random models or superficial metrics, this project deeply investigates the Cloud-Native system architecture behind the GenTD dataset. The ultimate goal is to map background infrastructure processes to concrete, production-ready engineering solutions.
 
-1. Data Collected ile local bilgisayarınıza indirmiş olduğunuz .tar uzantılı dosyaların .csv formatında, dataframes adında bir sözlükte bütün veriler barındırlmıştır. eklenen Real_time_CST değişkeni ise Çin saat dilimine uygun şekilde değiştirilmiştir. notebbok/Data_Information dosyasında ise okunan .csv formatındaki verilerin anlamları, açıklamaları bulunuyor.
+
+- Data Collected ile local bilgisayarınıza indirmiş olduğunuz .tar uzantılı dosyaların .csv formatında, dataframes adında bir sözlükte bütün veriler barındırlmıştır. Veri setlerine sonradan eklenen Real_time_CST değişkeni ise Çin zaman dilimine uygun şekilde değiştirilmiştir.
+- Data_Information dosyasında ise okunan .csv formatındaki verilerin açıklamaları bulunuyor. 
 - 1_EDA: İstek tiplerinin görselleştirilmesi ve yorumlanması. 
 - 2_EDA: Kuyruk boyutu ve bekleme sürelerinin görselleştirilmesi, yorumlanması.
 - 3_EDA: Veri setlerindeki ortak pod türlerinde çalıştırılan modellerin RAM,VRAM kullanım miktarlarının Saçılım grafiği ile görselleştirilmesi.

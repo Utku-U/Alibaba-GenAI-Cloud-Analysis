@@ -29,21 +29,7 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 
 
 ## **Data Structure**
-```
-.
-├── qps.csv                          # Gateway üzerinden alınan sistem QPS verisi
-├── queue_size_raw_anon.csv          # Gateway kuyruk boyutu izleme verisi
-├── queue_rt_raw_anon.csv            # Gateway kuyruk yanıt süresi verisi
-├── pipeline_update_latency_anon.csv # Pipeline güncelleme gecikmesi (Base, LoRA, ControlNet)
-├── base_model_update_latency_anon.csv # Base model yükleme gecikmesi
-├── lora_update_latency_anon.csv     # LoRA adaptör yükleme gecikmesi
-├── controlnet_latency_data_anon.csv # ControlNet yükleme gecikmesi
-├── pod_memory_util_anon.csv         # Konteyner bellek kullanımı
-├── pod_gpu_duty_cycle_anon.csv      # Kubernetes pod GPU kullanım oranı
-├── pod_gpu_memory_used_bytes_anon.csv # Kubernetes pod GPU bellek kullanımı
-├── model_predict_data_anon.csv      # Saf çıkarım (inference) gecikmesi
-├── pipeline_inference_data_anon.csv # Uçtan uca çıkarım yanıt süresi
-└── lora_request_trace.csv           # Kullanıcı tarafı uygulama performansı verisi
+
 ```
 ├── qps.csv # System QPS sampling data from gateway
 ├── queue_size_raw_anon.csv # Queue size monitoring data from gateway
@@ -58,6 +44,7 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 ├── model_predict_data_anon.csv # Pure inference latency
 ├── pipeline_inference_data_anon.csv # End-to-end inference response time
 └── lora_request_trace.csv # Application-level performance data from user side
+```
 
 ---------------------
 

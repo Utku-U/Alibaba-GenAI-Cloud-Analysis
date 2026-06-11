@@ -133,11 +133,12 @@ If you want to reproduce the analysis or run the repository step-by-step, please
 
 ```mermaid
 graph LR
-    A[📦 Collected Data] --> B[📄 Data Information]
-    B --> C[📊 1_EDA]
-    C --> D[📉 2_EDA]
-    D --> E[🔬 3_EDA]
-    E --> F[🧠 Advanced Analysis]
+    A[data] --> B[📄 Import raw]
+    B[📦 Collected Data] --> B[📄 Data Information]
+    C --> C[📊 1_EDA]
+    D --> D[📉 2_EDA]
+    E --> E[🔬 3_EDA]
+    F --> F[🧠 Advanced Analysis]
 
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style F fill:#bbf,stroke:#333,stroke-width:2px

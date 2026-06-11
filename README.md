@@ -55,7 +55,7 @@ Stable Diffusion (is one of the most popular methods used to generate images fro
 
 ---------------------
 
-#### User Request Types:
+## User Request Types:
 Cloud systems essentially aim to manage different user types within a single infrastructure. These user types are:
 - `End-Users:` Standard users (UI users) do not directly rent cloud infrastructure. A SaaS layer sits in between. Dominant predict_type; The vast majority are `TXT_2_IMG` for entertainment, curiosity, or simple design. Resource allocations; The user interfaces running on the Alibaba Cloud system providing this service (ComfyUI, etc.) use Reserved or Serverless servers to meet the baseline and predictable user load. Spot instances are not used in this group to prevent image generation failures.
 

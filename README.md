@@ -111,7 +111,7 @@ The Data_Information file contains descriptions of the data read from the .csv f
 - 3_EDA.ipynb : Resource Co-dependence (RAM vs. VRAM): Scatter plot analysis mapping baseline memory and VRAM footprints across common pod footprints to detect cold vs. warm start signatures.
 
 🔬 Feature Engineering & Analysis
-The focus is on the bottleneck problem. Using the PAM clustering algorithm, pods containing bottlenecks are identified and grouped. This aims to help determine solutions based on the density of pods operating with high or low performance during specific time periods.
+- The focus is on the bottleneck problem. Using the PAM clustering algorithm, pods containing bottlenecks are identified and grouped. This aims to help determine solutions based on the density of pods operating with high or low performance during specific time periods.
 
 
 | Cluster | Explanation

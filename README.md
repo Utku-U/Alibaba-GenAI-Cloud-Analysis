@@ -31,7 +31,7 @@ Cloud, içerisinde Database(vertabanları), Storage, Compute(Hesaplama, işlem g
 ---------------------
 
 
-#### **Peki bu veriye neden ihtiyaç duyulur?**
+### **Peki bu veriye neden ihtiyaç duyulur?**
 (GENTD neden tüm verileri çekiyor? Eğer sadece Altyapı katmanını izleseydi, GPU nun %100 çalıştığı görünürdü. Ama kullanıcının neden 30 sn beklediğni anlayamazdık.)
 
 **<span style="color:lightblue">Bu veri seti: </span>** GENTD26 verisinde, cloud kümelerinde çalışan Stable Diffusion mimarisi kullanılan görüntü üretme GenAI işlemini içerir. GENTD26 verisi özellikle, Stable Diffusion mimarisi kullanımı ile elde edilen görüntü üretme süreci verilerinin bulunması sebebi, GPU kullanımını en yoğun şekilde kullanan işlemler bunlardır. Henüz tam olarak keşfedilmeyen birçok iç görüler sunan bir veri setidir. (Gizliliği korumak amacıyla, orjinal veriler zaman damgası kaydırma, metrik ölçeklendirme ve tanımlayıcı karma işlemi gibi tekniklerle anonimleştirilirken, araştırma için gerekli olan dağıtım özellikleri ve korelasyonlar dikkatlice korunmuştur.) 

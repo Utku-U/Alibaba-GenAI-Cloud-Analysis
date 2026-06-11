@@ -148,18 +148,13 @@ graph LR
 
 
 ### 📂 Data Source & Acknowledgments
-The foundational dataset used in this analysis is the **Alibaba GenAI Cluster Trace (v2026)**. I would like to acknowledge the original creators and contributors of this dataset for open-sourcing real-world generative AI workload traces, which made this architectural analysis possible.
-
-**Original Repository:** https://github.com/alibaba/clusterdata/tree/master/cluster-trace-v2026-GenAI
-
-## 📊 Data Source & Acknowledgements
 
 The analysis in this repository is built upon the official Alibaba Cluster Trace dataset.
 
-* **Dataset:** Alibaba Cluster Trace v2026-GenAI
-* **Repository:** [![GitHub Badges](https://img.shields.io/badge/GitHub-Alibaba__Clusterdata-181717?logo=github)](https://github.com/alibaba/clusterdata/tree/master/cluster-trace-v2026-GenAI)
+The foundational dataset used in this analysis is the **Alibaba GenAI Cluster Trace (v2026)**. I would like to acknowledge the original creators and contributors of this dataset for open-sourcing real-world generative AI workload traces, which made this architectural analysis possible.
 
-We would like to thank the Alibaba Team for making this production-grade Generative AI workload dataset openly available to the cloud-native and research community.
+* **Dataset:** Alibaba Cluster Trace v2026-GenAI
+* **Original Repository:** [![GitHub Badges](https://img.shields.io/badge/GitHub-Alibaba__Clusterdata-181717?logo=github)](https://github.com/alibaba/clusterdata/tree/master/cluster-trace-v2026-GenAI)
 
 # -----------------------------------
 

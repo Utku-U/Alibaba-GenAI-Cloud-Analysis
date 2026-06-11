@@ -16,7 +16,7 @@ Alibaba cloud, içerisinde Database(vertabanları), Storage, Compute(Hesaplama, 
 
 **<span style="color:lightblue">Bu veri seti: </span>** GENTD26 verisinde, AliBaba cloud kümelerinde çalışan Stable Diffusion mimarisi kullanılan görüntü üretme GenAI işlemini içerir. GENTD26 verisi özellikle, Stable Diffusion mimarisi kullanımı ile elde edilen Görüntü üretme süreci verilerinin bulunması sebebi, GPU kullanımını en yoğun şekilde kullanan işlemler bunlardır. Henüz tam olarak keşfedilmeyen birçok iç görüler sunan bir veri setidir. (Gizliliği korumak amacıyla, orjinal veriler zaman damgası kaydırma, metrik ölçeklendirme ve tanımlayıcı karma işlemi gibi tekniklerle anonimleştirilirken, araştırma için gerekli olan dağıtım özellikleri ve korelasyonlar dikkatlice korunmuştur.) 
 
-## **Stable Diffusion Architectural**
+### **Stable Diffusion Architectural**
 Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanılan en popüler yöntemlerden biridir) Mimarinin temel amacı: Görselleri ve Promptları matematiksel bir gürültü giderme(denoise) süreci ile yüksek çözünürlüklü ve anlamlı görsel haline getirmek.
 
 - `Giriş(Noise & VAE):` Sistem tamamen rasgele bir gürültüyle başlar. VAE(Encoder) bu gürültüyü "Latent Space" (Gizli Uzay) denilen, hesaplaması daha kolay, sıkıştırılmış bir alana taşır.
@@ -29,6 +29,21 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 
 
 ## **Data Structure**
+
+.
+├── qps.csv                          # Gateway üzerinden alınan sistem QPS verisi
+├── queue_size_raw_anon.csv          # Gateway kuyruk boyutu izleme verisi
+├── queue_rt_raw_anon.csv            # Gateway kuyruk yanıt süresi verisi
+├── pipeline_update_latency_anon.csv # Pipeline güncelleme gecikmesi (Base, LoRA, ControlNet)
+├── base_model_update_latency_anon.csv # Base model yükleme gecikmesi
+├── lora_update_latency_anon.csv     # LoRA adaptör yükleme gecikmesi
+├── controlnet_latency_data_anon.csv # ControlNet yükleme gecikmesi
+├── pod_memory_util_anon.csv         # Konteyner bellek kullanımı
+├── pod_gpu_duty_cycle_anon.csv      # Kubernetes pod GPU kullanım oranı
+├── pod_gpu_memory_used_bytes_anon.csv # Kubernetes pod GPU bellek kullanımı
+├── model_predict_data_anon.csv      # Saf çıkarım (inference) gecikmesi
+├── pipeline_inference_data_anon.csv # Uçtan uca çıkarım yanıt süresi
+└── lora_request_trace.csv           # Kullanıcı tarafı uygulama performansı verisi
 
 ├── qps.csv # System QPS sampling data from gateway
 ├── queue_size_raw_anon.csv # Queue size monitoring data from gateway

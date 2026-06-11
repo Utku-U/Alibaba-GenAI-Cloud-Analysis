@@ -1,12 +1,34 @@
 # **GENTD26 Dataset:** 
 
-Alibaba cloud, içerisinde Database(vertabanları), Storage, Compute(Hesaplama, işlem güçleri), Networking ... barındıran cloud yapısıdır. GENTD26 verisi ise AI modelleri üzerinde gerçekleştirilmek istenen GenAI odaklı işlemleri izlemek adına toplanmış veri setidir. Elimizde yüksek çözünürlükte görüntü oluşturmaya yarayan uçtan uca Stable Diffusion mimarisi var. Bu mimari, işlem esnasında Cloud içerisindeki GPU kullanır. GENTD26, 3 katman ile, uçtan uca mimarinin(fabrikanın tüm verimini, arızalarını ve yakıt tüketimini) kaydedilmiş bir **KARA KUTU / GÖZETLEME sisteminin** veri setidir. Verileri toplayan bu sistem Stable Diffusion GenAI kullanımına odaklanır. Bu veri seti, büyük ölçekli bir üretken yapay zeka sunucu sisteminin GENTD26 kapsamlı bir yukarıdan aşağıya görünümünü sunarak, üç mimari katmandaki performans verilerini yakalar: 
+Cloud, içerisinde Database(vertabanları), Storage, Compute(Hesaplama, işlem güçleri), Networking ... barındıran yapıdır. GENTD26 verisi ise AI modelleri üzerinde gerçekleştirilmek istenen GenAI odaklı işlemleri izlemek adına toplanmış veri setidir. Elimizde yüksek çözünürlükte görüntü oluşturmaya yarayan uçtan uca Stable Diffusion mimarisi var. Bu mimari, işlem esnasında Cloud içerisindeki hareketleri incelenir. GENTD26, 3 katman ile, uçtan uca mimarinin(fabrikanın tüm verimini, arızalarını ve yakıt tüketimini) kaydedilmiş bir **KARA KUTU / GÖZETLEME sisteminin** veri setidir. Verileri toplayan bu sistem Stable Diffusion GenAI kullanımına odaklanır. Bu veri seti, büyük ölçekli bir üretken yapay zeka sunucu sisteminin GENTD26 kapsamlı bir yukarıdan aşağıya görünümünü sunarak, üç mimari katmandaki performans verilerini yakalar: 
 
 1. `Uygulama Katmanı(kullanıcı istekleri & uçtan uca gecikme):` Bu katman, sistemin "insanlarla temas eden" yüzüdür. GENTD burada şu soruyu sorar: "Kullanıcı ne kadar bekledi?
 
 2. `Ara Katman(ağ geçidi kuyrukları & zamanlayıcılar & işlem hattı yöntemi):` Resim oluşturma emri GPU'ya gitmeden önce bu "ara durakta" bekler. GENTD burada sistemin yönetim verimliliğini ölçer.
 
 3. `Altyapı Katmanı(Fiziksel Güç & Kaynaklar):` Burası "makine dairesidir". GENTD burada donanımın limitlerini takip eder.
+
+---------------------
+
+## **Data Structure**
+
+```
+├── qps.csv # System QPS sampling data from gateway
+├── queue_size_raw_anon.csv # Queue size monitoring data from gateway
+├── queue_rt_raw_anon.csv # Queue response time monitoring data from gateway
+├── pipeline_update_latency_anon.csv # Pipeline update latency, including base model, LoRA, and ControlNet
+├── base_model_update_latency_anon.csv # Base model loading latency
+├── lora_update_latency_anon.csv # LoRA adapter loading latency
+├── controlnet_latency_data_anon.csv # ControlNet loading latency
+├── pod_memory_util_anon.csv # Container memory utilization
+├── pod_gpu_duty_cycle_anon.csv # GPU utilization of each kubernetes pod
+├── pod_gpu_memory_used_bytes_anon.csv # GPU memory usage of each kubernetes pod
+├── model_predict_data_anon.csv # Pure inference latency
+├── pipeline_inference_data_anon.csv # End-to-end inference response time
+└── lora_request_trace.csv # Application-level performance data from user side
+```
+
+---------------------
 
 
 #### **Peki bu veriye neden ihtiyaç duyulur?**
@@ -69,28 +91,6 @@ Ayrıca, cloud sistem içerisindeki podları kontrol eden prometheus adaptörü 
 
 ### Veri setine uygun olacak şekilde cloud sistemin daha iyi anlaşılabilmesi adına yapılan çizim:
 <img width="2048" height="1460" alt="WhatsApp Image 2026-06-05 at 18 00 32" src="https://github.com/user-attachments/assets/54eefbc4-b1d7-4851-842a-c5537fcfdac5" />
-
-
----------------------
-
-## **Data Structure**
-
-```
-├── qps.csv # System QPS sampling data from gateway
-├── queue_size_raw_anon.csv # Queue size monitoring data from gateway
-├── queue_rt_raw_anon.csv # Queue response time monitoring data from gateway
-├── pipeline_update_latency_anon.csv # Pipeline update latency, including base model, LoRA, and ControlNet
-├── base_model_update_latency_anon.csv # Base model loading latency
-├── lora_update_latency_anon.csv # LoRA adapter loading latency
-├── controlnet_latency_data_anon.csv # ControlNet loading latency
-├── pod_memory_util_anon.csv # Container memory utilization
-├── pod_gpu_duty_cycle_anon.csv # GPU utilization of each kubernetes pod
-├── pod_gpu_memory_used_bytes_anon.csv # GPU memory usage of each kubernetes pod
-├── model_predict_data_anon.csv # Pure inference latency
-├── pipeline_inference_data_anon.csv # End-to-end inference response time
-└── lora_request_trace.csv # Application-level performance data from user side
-```
-
 
 
 ---------------------

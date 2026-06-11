@@ -29,7 +29,7 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 
 
 ## **Data Structure**
-
+```
 .
 ├── qps.csv                          # Gateway üzerinden alınan sistem QPS verisi
 ├── queue_size_raw_anon.csv          # Gateway kuyruk boyutu izleme verisi
@@ -44,7 +44,7 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 ├── model_predict_data_anon.csv      # Saf çıkarım (inference) gecikmesi
 ├── pipeline_inference_data_anon.csv # Uçtan uca çıkarım yanıt süresi
 └── lora_request_trace.csv           # Kullanıcı tarafı uygulama performansı verisi
-
+```
 ├── qps.csv # System QPS sampling data from gateway
 ├── queue_size_raw_anon.csv # Queue size monitoring data from gateway
 ├── queue_rt_raw_anon.csv # Queue response time monitoring data from gateway

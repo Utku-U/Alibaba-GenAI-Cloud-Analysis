@@ -100,7 +100,7 @@ Ayrıca, cloud sistem içerisindeki podları kontrol eden prometheus adaptörü 
 # Alibaba-GenAI-Cloud-Analysis
 
 📦 Data Collected & Preprocessing
-All downloaded .tar dataset files are extracted, loaded as .csv formats, and managed globally inside a Python dictionary named dataframes.
+- All downloaded .tar dataset files are extracted, loaded as .csv formats, and managed globally inside a Python dictionary named dataframes.
 The real_time_CST feature has been synchronized to follow the China Standard Time (CST) zone to match the cluster's native operational lifecycle. Comprehensive data definitions can be found directly in the accompanying Data_Information log.
 
 The Data_Information file contains descriptions of the data read from the .csv file.

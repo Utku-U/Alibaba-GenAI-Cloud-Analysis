@@ -144,7 +144,7 @@ graph LR
 ```
 
 
-# -------------------------------------------------------------------------
+# -----------------------------------
 
 
 ### 📂 Data Source & Acknowledgments
@@ -152,7 +152,16 @@ The foundational dataset used in this analysis is the **Alibaba GenAI Cluster Tr
 
 **Original Repository:** https://github.com/alibaba/clusterdata/tree/master/cluster-trace-v2026-GenAI
 
-# -------------------------------------------------------------------------
+## 📊 Data Source & Acknowledgements
+
+The analysis in this repository is built upon the official Alibaba Cluster Trace dataset.
+
+* **Dataset:** Alibaba Cluster Trace v2026-GenAI
+* **Repository:** [![GitHub Badges](https://img.shields.io/badge/GitHub-Alibaba__Clusterdata-181717?logo=github)](https://github.com/alibaba/clusterdata/tree/master/cluster-trace-v2026-GenAI)
+
+We would like to thank the Alibaba Team for making this production-grade Generative AI workload dataset openly available to the cloud-native and research community.
+
+# -----------------------------------
 
 ```
 pip install -r requirements.txt

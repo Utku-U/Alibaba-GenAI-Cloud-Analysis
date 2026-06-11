@@ -1,12 +1,10 @@
 # **GENTD26 Dataset:** 
 
-Cloud, içerisinde Database(vertabanları), Storage, Compute(Hesaplama, işlem güçleri), Networking ... barındıran yapıdır. GENTD26 verisi ise AI modelleri üzerinde gerçekleştirilmek istenen GenAI odaklı işlemleri izlemek adına toplanmış veri setidir. Elimizde yüksek çözünürlükte görüntü oluşturmaya yarayan uçtan uca Stable Diffusion mimarisi var. Bu mimari, işlem esnasında Cloud içerisindeki hareketleri incelenir. GENTD26, 3 katman ile, uçtan uca mimarinin(fabrikanın tüm verimini, arızalarını ve yakıt tüketimini) kaydedilmiş bir **KARA KUTU / GÖZETLEME sisteminin** veri setidir. Verileri toplayan bu sistem Stable Diffusion GenAI kullanımına odaklanır. Bu veri seti, büyük ölçekli bir üretken yapay zeka sunucu sisteminin GENTD26 kapsamlı bir yukarıdan aşağıya görünümünü sunarak, üç mimari katmandaki performans verilerini yakalar: 
+Cloud is a structure that hosts Databases, Storage, Compute (Computation, processing powers), Networking... The GENTD26 data, on the other hand, is a dataset collected to monitor GenAI-focused operations intended to be performed on AI models. We have an end-to-end Stable Diffusion architecture used to generate high-resolution images. The movements within the Cloud during the operations of this architecture are examined. GENTD26, across 3 layers, is the dataset of a recorded BLACK BOX / SURVEILLANCE system capturing the end-to-end architecture (all the efficiency, malfunctions, and fuel consumption of the factory). This system that collects data focuses on Stable Diffusion GenAI usage. This dataset captures performance data across three architectural layers, providing a comprehensive GENTD26 top-down view of a large-scale generative AI server system:
 
-1. `Uygulama Katmanı(kullanıcı istekleri & uçtan uca gecikme):` Bu katman, sistemin "insanlarla temas eden" yüzüdür. GENTD burada şu soruyu sorar: "Kullanıcı ne kadar bekledi?
-
-2. `Ara Katman(ağ geçidi kuyrukları & zamanlayıcılar & işlem hattı yöntemi):` Resim oluşturma emri GPU'ya gitmeden önce bu "ara durakta" bekler. GENTD burada sistemin yönetim verimliliğini ölçer.
-
-3. `Altyapı Katmanı(Fiziksel Güç & Kaynaklar):` Burası "makine dairesidir". GENTD burada donanımın limitlerini takip eder.
+1. `Application Layer (user requests & end-to-end latency):` This layer is the "human-facing" side of the system. Here, GENTD asks this question: "How long did the user wait?
+2. `Middleware (gateway queues & schedulers & pipeline method):` The image generation command waits at this "intermediate stop" before going to the GPU. Here, GENTD measures the management efficiency of the system.
+3. `Infrastructure Layer (Physical Power & Resources):` This is the "engine room". Here, GENTD tracks the limits of the hardware.
 
 ---------------------
 

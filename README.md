@@ -154,4 +154,6 @@ The foundational dataset used in this analysis is the **Alibaba GenAI Cluster Tr
 
 # -------------------------------------------------------------------------
 
+```
 pip install -r requirements.txt
+```

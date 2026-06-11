@@ -1,8 +1,6 @@
 # **GENTD26 Dataset:** 
 
-Alibaba cloud, içerisinde Database(vertabanları), Storage, Compute(Hesaplama, işlem güçleri), Networking ... barındıran cloud yapısıdır. GENTD26 verisi ise Alibaba cloud bünyesinde yalnızca AI modelleri üzerinde gerçekleştirilmek istenen GenAI odaklı işlemleri izlemek adına toplanmış veri setidir. Elimizde yüksek çözünürlükte görüntü oluşturmaya yarayan uçtan uca Stable Diffusion mimarisi var. Bu mimari, işlem esnasında Alibaba Cloud içerisindeki GPU kullanır. GENTD26, 3 katman ile, uçtan uca mimarinin(fabrikanın tüm verimini, arızalarını ve yakıt tüketimini) kaydedilmiş bir **KARA KUTU / GÖZETLEME sisteminin** veri setidir. Verileri toplayan bu sistem Stable Diffusion GenAI kullanımına odaklanır. Bu veri seti, büyük ölçekli bir üretken yapay zeka sunucu sisteminin GENTD26 kapsamlı bir yukarıdan aşağıya görünümünü sunarak, üç mimari katmandaki performans verilerini yakalar: 
-
-**<span style="color:red">Dikkat !!</span>** Yani Alibaba.com da alışveriş yapan bir kişi,sistem veritabanı izlenmez.
+Alibaba cloud, içerisinde Database(vertabanları), Storage, Compute(Hesaplama, işlem güçleri), Networking ... barındıran cloud yapısıdır. GENTD26 verisi ise AI modelleri üzerinde gerçekleştirilmek istenen GenAI odaklı işlemleri izlemek adına toplanmış veri setidir. Elimizde yüksek çözünürlükte görüntü oluşturmaya yarayan uçtan uca Stable Diffusion mimarisi var. Bu mimari, işlem esnasında Cloud içerisindeki GPU kullanır. GENTD26, 3 katman ile, uçtan uca mimarinin(fabrikanın tüm verimini, arızalarını ve yakıt tüketimini) kaydedilmiş bir **KARA KUTU / GÖZETLEME sisteminin** veri setidir. Verileri toplayan bu sistem Stable Diffusion GenAI kullanımına odaklanır. Bu veri seti, büyük ölçekli bir üretken yapay zeka sunucu sisteminin GENTD26 kapsamlı bir yukarıdan aşağıya görünümünü sunarak, üç mimari katmandaki performans verilerini yakalar: 
 
 1. `Uygulama Katmanı(kullanıcı istekleri & uçtan uca gecikme):` Bu katman, sistemin "insanlarla temas eden" yüzüdür. GENTD burada şu soruyu sorar: "Kullanıcı ne kadar bekledi?
 
@@ -14,7 +12,7 @@ Alibaba cloud, içerisinde Database(vertabanları), Storage, Compute(Hesaplama, 
 #### **Peki bu veriye neden ihtiyaç duyulur?**
 (GENTD neden tüm verileri çekiyor? Eğer sadece Altyapı katmanını izleseydi, GPU nun %100 çalıştığı görünürdü. Ama kullanıcının neden 30 sn beklediğni anlayamazdık.)
 
-**<span style="color:lightblue">Bu veri seti: </span>** GENTD26 verisinde, AliBaba cloud kümelerinde çalışan Stable Diffusion mimarisi kullanılan görüntü üretme GenAI işlemini içerir. GENTD26 verisi özellikle, Stable Diffusion mimarisi kullanımı ile elde edilen Görüntü üretme süreci verilerinin bulunması sebebi, GPU kullanımını en yoğun şekilde kullanan işlemler bunlardır. Henüz tam olarak keşfedilmeyen birçok iç görüler sunan bir veri setidir. (Gizliliği korumak amacıyla, orjinal veriler zaman damgası kaydırma, metrik ölçeklendirme ve tanımlayıcı karma işlemi gibi tekniklerle anonimleştirilirken, araştırma için gerekli olan dağıtım özellikleri ve korelasyonlar dikkatlice korunmuştur.) 
+**<span style="color:lightblue">Bu veri seti: </span>** GENTD26 verisinde, cloud kümelerinde çalışan Stable Diffusion mimarisi kullanılan görüntü üretme GenAI işlemini içerir. GENTD26 verisi özellikle, Stable Diffusion mimarisi kullanımı ile elde edilen görüntü üretme süreci verilerinin bulunması sebebi, GPU kullanımını en yoğun şekilde kullanan işlemler bunlardır. Henüz tam olarak keşfedilmeyen birçok iç görüler sunan bir veri setidir. (Gizliliği korumak amacıyla, orjinal veriler zaman damgası kaydırma, metrik ölçeklendirme ve tanımlayıcı karma işlemi gibi tekniklerle anonimleştirilirken, araştırma için gerekli olan dağıtım özellikleri ve korelasyonlar dikkatlice korunmuştur.) 
 
 ### **Stable Diffusion Architectural**
 Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanılan en popüler yöntemlerden biridir) Mimarinin temel amacı: Görselleri ve Promptları matematiksel bir gürültü giderme(denoise) süreci ile yüksek çözünürlüklü ve anlamlı görsel haline getirmek.
@@ -31,10 +29,10 @@ Stable Diffusion (Görselden ve metinden görüntü oluşturmak için kullanıla
 
 ---------------------
 
-
 ### 🔔 Attention:
 > *Please note that the explanations and analyses provided in this repository incorporate personal insights, system-level interpretations, and domain knowledge. Rather than generating random models or superficial metrics, this project deeply investigates the **Cloud-Native system architecture** behind the GenTD dataset. The ultimate goal is to map background infrastructure processes to concrete, production-ready engineering solutions.*
 
+---------------------
 
 #### **<span style="color:lightblue">Kullanıcı İstek çeşitleri:</span>**
 Cloud sistemleri, farklı kullanıcı tiplerini tek bir altyapıda yönetmeyi amaçlar özünde. Bu kullanıcı tipleri:
